@@ -11,56 +11,74 @@
 <body>
 
 <div class="topnav" id="myTopnav">
-  <a href="#projects" class="w3-bar-item w3-button active">Projects</a>
-  <a href="#tomas" class="w3-bar-item w3-button">Tomás Silveira</a>
-  <a href="#bruno" class="w3-bar-item w3-button">Bruno David</a>
-  <a href="#rafael" class="w3-bar-item w3-button">Rafael Costa</a>
-  <a href="#gui" class="w3-bar-item w3-button">Guilherme abrantes</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  <a  href="#projects" class="w3-bar-item w3-button active" onclick="myFunction()">Projects</a>
+  <a href="#tomas" class="w3-bar-item w3-button" onclick="myFunction()">Tomás Silveira</a>
+  <a href="#bruno" class="w3-bar-item w3-button" onclick="myFunction()">Bruno David</a>
+  <a href="#rafael" class="w3-bar-item w3-button" onclick="myFunction()">Rafael Costa</a>
+  <a href="#gui" class="w3-bar-item w3-button" onclick="myFunction()">Guilherme abrantes</a>
+  <a href="#" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
 </div>
 
 <!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-  <img class="w3-image w3-hide-small" src="backgroundFoto.jpg" alt="Architecture" width="100%" height="800">
-  <img class="w3-image w3-hide-medium w3-hide-large" src="backgroundFoto.jpg" alt="Architecture" width="100%" height="1200">
+<header class="w3-display-container w3-content w3-wide" style="max-width:100%;" id="home">
+  <img class="w3-image w3-hide-small" src="photos/backgroundFoto.jpg" alt="Architecture" width="100%" height="800">
+  <img class="w3-image w3-hide-medium w3-hide-large" src="photos/backgroundFoto.jpg" style="height: 700px!important;"alt="Architecture">
   <div class="w3-display-middle w3-margin-top w3-center">
     <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>18</b></span> <span class=" w3-text-light-grey w3-hide-small">plus 2</span></h1>
   </div>
 </header>
 
 <!-- Page content -->
-<div class="w3-content w3-padding" style="max-width:1564px">
+<div class="w3-content w3-padding" style="width: 100%;">
 
   <!-- Project Section -->
   <div class="w3-container w3-padding-32" id="projects">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects  (Grupo 18)</h3>
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects (Grupo 18)</h3>
   </div>
 
   <div class="w3-row-padding">
     <div class="w3-col s6 l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
         <div class="w3-display-topleft w3-black w3-padding">1º Fase Projeto</div>
-        <img src="pasta.png" alt="House" style="width:80%">
+        <img src="photos/pasta.png" alt="House" style="width:80%">
       </div>
     </div>
-    <div class="w3-col s6 l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">1º Fase Relatório</div>
-        <img src="report.jpg" alt="House" style="width:85%">
+    <div id="relatorios" class="w3-col s6 l3 m6 w3-margin-bottom">
+      <div class="w3-display-container" onclick="document.getElementById('id01').style.display='block'">
+        <div class="w3-display-topleft w3-black w3-padding">1º Fase Relatórios</div>
+        <img src="photos/report.jpg" alt="House" style="width:85%">
       </div>
     </div>
+
+    <div id="id01" class="w3-modal w3-animate-opacity">
+      <div class="w3-modal-content w3-card-4">
+        <header class="w3-container w3-dark-grey"> 
+          <span onclick="document.getElementById('id01').style.display='none'" 
+          class="w3-button w3-large w3-display-topright">&times;</span>
+          <h2>1º Fase Relatório</h2>
+        </header>
+        <div class="w3-container">
+          <p><a href="Resume_Rafael_Costa.pdf">Relatório stage 1</a></p>
+          <p>Relatório stage 2</p>
+        </div>
+        <!--<footer class="w3-container w3-dark-grey">
+          <p>Modal Footer</p>
+        </footer>-->
+      </div>
+    </div>
+
     <div class="w3-col s6 l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
         <div class="w3-display-topleft w3-black w3-padding">2º Fase Projeto</div>
-        <img src="pasta.png" alt="House" style="width:80%">
+        <img src="photos/pasta.png" alt="House" style="width:80%">
       </div>
     </div>
     <div class="w3-col s6 l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">2º Fase Relatório</div>
-        <img src="report.jpg" alt="House" style="width:85%">
+        <div class="w3-display-topleft w3-black w3-padding">2º Fase Relatórios</div>
+        <img src="photos/report.jpg" alt="House" style="width:85%">
       </div>
     </div>
   </div>
@@ -69,7 +87,7 @@
   <div class="w3-container w3-padding-32" id="tomas">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Tomás Silveira - 60734</h3>
         <center>
-            <img id="profile_img" src="tomasSilveira.jpg" width="150" height="200">
+            <img id="profile_img" src="photos/tomasSilveira.jpg" width="150" height="200">
         </center>
 
         <table id="customers">
@@ -77,7 +95,7 @@
             <th>Trabalho</th>  
           </tr>
           <tr>
-            <td><a href="https://github.com/BrunoDavidES/ipm_group/blob/4af8df8bc3d5e1e9f45e2e1b2c1e59ee503a6640/IPM/Trab1_tomas_silveira.docx" target="_blank">Good and Bad Design</a></td>
+            <td><a href="./trabalhos/Trab1_tomas_silveira.pdf" target="_blank">Good and Bad Design</a></td>
           </tr>
           <tr>
             <td>Trabalho 2</td>
@@ -92,7 +110,7 @@
   <div class="w3-container w3-padding-32" id="bruno">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Bruno David - 60011</h3>
         <center>
-            <img id="profile_img" src="bruno.jpg" width="170" height="200">
+            <img id="profile_img" src="photos/bruno.jpg" width="170" height="200">
         </center>
 
         <table id="customers">
@@ -100,7 +118,7 @@
             <th>Trabalho</th>  
           </tr>
           <tr>
-            <td><a href="https://github.com/BrunoDavidES/ipm_group/blob/0624c5e2f80b1d53e6668c8985ba95120c8989ed/IPM/trab1_bruno_david.docx" target="_blank">Good and Bad Design</a></td>
+            <td><a href="./trabalhos/trab1_bruno_david.pdf" target="_blank">Good and Bad Design</a></td>
           </tr>
           <tr>
             <td>Trabalho 2</td>
@@ -115,7 +133,7 @@
   <div class="w3-container w3-padding-32" id="rafael">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Rafael Costa - 60441</h3>
         <center>
-            <img id="profile_img" src="Rafael.png" width="190" height="200">
+            <img id="profile_img" src="photos/Rafael.png" width="190" height="200">
         </center>
 
         <table id="customers">
@@ -123,7 +141,8 @@
             <th>Trabalho</th>  
           </tr>
           <tr>
-            <td><a href="https://github.com/BrunoDavidES/ipm_group/blob/92a2eb1e395a0d726f67ea256aad633a1573437c/IPM/Trab1_rafael_costa.docx" target="_blank">Good and Bad Design</a></td>
+            <td><a href="./trabalhos/Trab1_rafael_costa.pdf" target="_blank">Good and Bad Design</a></td>
+
           </tr>
           <tr>
             <td>Trabalho 2</td>
@@ -138,7 +157,7 @@
   <div class="w3-container w3-padding-32" id="gui">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Guilherme Abrantes - 60971</h3>
         <center>
-            <img id="profile_img" src="Guilherme Abrantes.jpg" width="150" height="200">
+            <img id="profile_img" src="photos/Guilherme Abrantes.jpg" width="150" height="200">
         </center>
 
         <table id="customers">
@@ -146,7 +165,7 @@
             <th>Trabalho</th>  
           </tr>
           <tr>
-            <td><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_table_fancy" target="_blank">Good and Bad Design</a></td>
+            <td><a href="./trabalhos/Trab1_rafael_costa.pdf" target="_blank">Good and Bad Design</a></td>
           </tr>
           <tr>
             <td>Trabalho 2</td>
